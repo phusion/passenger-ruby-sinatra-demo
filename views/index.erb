@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello</title>
+  <style>
+  	html, body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      margin: 4em;
+    }
+
+    .main {
+      background: white;
+      border: solid 1px #c0c0c0;
+      border-radius: 8px;
+      padding: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="main">
+    <h1>Hello world!</h1>
+    <% if defined?(PhusionPassenger) %>
+      <p>Congratulations, you are running this app in Passenger!</p>
+    <% else %>
+      <p>You are not running this app in Passenger. Please use <code>bundle exec passenger start</code>.</p>
+    <% end %>
+  </section>
+
+</body>
+</html>
