@@ -1,9 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    passenger (5.0.25)
+      rack
+      rake (>= 0.8.1)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    rake (10.4.2)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -14,4 +18,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  passenger
   sinatra
